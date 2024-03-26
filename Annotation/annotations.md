@@ -30,5 +30,29 @@
     - Conclusão da instalação, pegando a senha inicial no local informado e criando usuário admin para o Jenkins
 
 6. Explorando a console web
+    - Explorando de fato todas as telas do Jenkins
+
+7. Integrando Git com GitHub
+    - Criando um repositório para jobs, no meu caso criei um diretório separado aqui mesmo nesse repositório.
+    - Criando um arquivo java para testes.
+    - Efetuando o push do arquivo java
+
+8. Criando uma simples Job
+    - Instalando um plugin `GitHub Authentication`
+    - Criando uma nova tarefa ou job.
+    - Adicionando um repositório Git.
+    - Explicando todas as opções do Job.
+    - Verificando o Workspace do projeto criado.
+
+9. Trabalhando com variáveis de ambiente
+    - Verificando as variáveis de ambiente do Jenkins.
+    - Execuntando print de algumas variáveis.
+    - Instalando um novo plugin chamado `build-name-setter`
+    - Personalizando o Build Name com o plugin instalado.
+    - Instalando um novo plugin chamado `user-build-vars`
+    - Utilizando o novo Plugin
+
+10. Configurando notificação por e-mail
     - 
+
     
