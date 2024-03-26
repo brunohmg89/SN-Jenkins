@@ -25,5 +25,10 @@
     - Etapa de criar um usuário administrador para o Jenkins
 
 5. Executando o Jenkins no Docker
+    - Criei um `docker-compose` para subir um container com o Jenkins
+    - `docker logs IDCONTAINER` para verificar informações se o Jenkins subiu corretamente
+    - Conclusão da instalação, pegando a senha inicial no local informado e criando usuário admin para o Jenkins
+
+6. Explorando a console web
     - 
     
