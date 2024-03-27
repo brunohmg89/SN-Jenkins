@@ -53,6 +53,46 @@
     - Utilizando o novo Plugin
 
 10. Configurando notificação por e-mail
-    - 
+    - Configurando para receber notificação pelo Gmail.
+    - No curso existe uma limitação no uso do smtp do Gmail, estou testando via docker local, a principio liberei a porta SSL 465 porém não funcionou.
+    - Agora testando com a porta TLS 587.
+    - Liberado a porta 587 no docker-compose
+    - <https://support.google.com/accounts/answer/185833?visit_id=638471582261358825-83960100&p=InvalidSecondFactor&rd=1> para que o Jenkins ou qualquer outra ferramenta faça acesso a sua conta particular de qualquer provedor, no caso do meu Gmail, é necessário configurar uma senha de acesso ao APP seguindo a DOC.
+    - Teste de conexão com o SMTP do Google realizado com sucesso, porém não sei o motivo de não ter enviado notificação para o meu email após a "construção".
 
-    
+11. Configurando Builds automáticas
+    - Configurando uma trigger, após um push no repositório
+    - Marcando a opção **GitHub hook trigger for GITScm polling** para quando houver alterações no repositório de código disparar a construção do projeto.
+    - Necessário o plugin do Git no Jenkins e configuração do repositório.
+    - Configurando repositório
+    - <https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project> processo de criação de webhook para integração com o Jenkins, como criei o mesmo local não será possível essa configuração por eu precisar de uma URL pública.
+    - Necessário criar uma chave pública no servidor e adicionar uma **deploy key** no GitHub.
+    - Alterar job, adicionando GitHub Project
+
+12. Executando Jobs com parâmetros
+    - Criando um novo dentro do diretório **Jobs** `concat.java`
+    - Configurando projeto
+    - Adicionando parâmetro de **escolha**
+    - Adicionando parâmetro de **string**
+    - Criando uma condição para execução do Job
+
+13. Builds concorrentes
+    - Verificando builds concorrentes
+    - Gerenciar Jenkins e altere o número de executores. Por padrão 2 jobs podem correr simultaneamente, dependendo de sua aplicação altere o valor.
+
+14. Conclusão
+    - Conclusão do curso para iniciar com o Jenkins, criamos um projeto e exploramos algumas opções de configuração, tanto do Jenkins quanto do projeto. No próximo curso iremos criar **pipelines**.
+
+# Avançando com o Jenkins
+
+## Seção 1
+
+1. Introdução
+    - Explicando o que criaremos no curso.
+
+2. Executando o Jenkins em um container Docker
+    - Já tenho um container com o Jenkins
+    - Nesse vídeo foi realizado a instalação do Jenkins por container Docker
+
+3. Conceitos de Pipeline
+    - 
