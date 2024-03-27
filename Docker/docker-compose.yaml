@@ -12,6 +12,8 @@ services:
     ports:
       - 8080:8080
       - 5000:5000
+      - 465:465
+      - 587:587
     networks:
       - jenkins
 
