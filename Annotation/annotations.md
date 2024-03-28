@@ -95,4 +95,3 @@
     - Nesse vídeo foi realizado a instalação do Jenkins por container Docker
 
 3. Conceitos de Pipeline
-    - 
