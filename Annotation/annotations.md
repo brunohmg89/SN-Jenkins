@@ -67,7 +67,9 @@
     - Configurando repositório
     - <https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project> processo de criação de webhook para integração com o Jenkins, como criei o mesmo local não será possível essa configuração por eu precisar de uma URL pública.
     - Necessário criar uma chave pública no servidor e adicionar uma **deploy key** no GitHub.
+    - Necessário ter o Git instalado no servidor para funcionar conexão entre Jenkins e GitHub.
     - Alterar job, adicionando GitHub Project
+    - Testei com o servidor instalado no GCP e o webhook funcionou corretamente.
 
 12. Executando Jobs com parâmetros
     - Criando um novo dentro do diretório **Jobs** `concat.java`
