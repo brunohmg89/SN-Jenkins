@@ -97,3 +97,9 @@
     - Nesse vídeo foi realizado a instalação do Jenkins por container Docker
 
 3. Conceitos de Pipeline
+    - Criaremos uma pipeline
+
+4. Criando estágio de build para aplicação Python
+    - Efetuando a cópia dos arquivos em Python do repositório <https://github.com/jenkins-docs/simple-python-pyinstaller-app>
+    - Iniciando a criação do Pipeline, adicionando o repositório e o path onde se encontra o arquivo `Jenkinsfile`
+    - Criado **stage** de Build no arquivo `Jenkinsfile`
