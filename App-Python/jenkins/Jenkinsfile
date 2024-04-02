@@ -30,7 +30,7 @@ pipeline {
                 sh 'pyinstaller --onefile App-Python/sources/add2vals.py'
             }
             post {
-                sucess {
+                success {
                     archiveArtifacts 'dist/add2vals'
                 }
             }
