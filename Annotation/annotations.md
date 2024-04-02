@@ -103,3 +103,25 @@
     - Efetuando a cópia dos arquivos em Python do repositório <https://github.com/jenkins-docs/simple-python-pyinstaller-app>
     - Iniciando a criação do Pipeline, adicionando o repositório e o path onde se encontra o arquivo `Jenkinsfile`
     - Criado **stage** de Build no arquivo `Jenkinsfile`
+    - Ocorreram alguns erros, e em pesquisas faltava os plugins do Docker, foram instalados e os erros mudaram.
+    - Necessária instalação do Docker na instância para que a pipeline consiga efetuar os comandos Docker
+    - Necessário permissão para o usuários do Jenkins utilizar o Docker `sudo usermod -aG docker jenkins` e após isso reiniciar o serviço do Jenkins.
+
+5. Criando estágio de Teste
+    - Explicando sobre testes unitários
+    - Criando o **stage** de `Test` utilizando uma nova imagem do Docker para rodar testes unitários.
+
+6. Trabalhando com a seção post
+    - Post (Condição)
+        - **Always:** Execute as etapas independentemente do status de conclusão da execução do pipeline ou do estágio.
+        - **Changed:** Execute as etapas somente se a execução do Pipeline atual tiver um status de conclusão diferente da execução anterior.
+        - **Fixed:** Execute as etapas somente se a execução do Pipeline atual for bem-sucedida e a execução anterior falhar ou estiver instável.
+        - **Regression:** Execute as etapas somente se o status ou do pipeline atual for falha, instável ou anulado e a execução anterior tiver sido bem-sucedida.
+        - **Aborted:** Execute as etapas somente se a execução do Pipeline atual tiver um status "abortado", geralmente devido ao Pipeline ter sido abortado manualmente. Isso normalmente é indicado em cinza na interface da web.
+        - **Failure:** Execute as etapas apenas se a execução do pipeline ou estágio atual tiver um status de "falha", normalmente indicado em vermelho na UI da web.
+        - **Success:** Execute as etapas apenas se a execução do pipeline ou do estágio atual tiver um status de "sucesso", normalmente indicado em azul ou verde na UI da web.
+        - **Unstable:** Execute as etapas apenas se a execução do Pipeline atual tiver um status "instável", geralmente causado por falhas de teste, violações de código etc. Isso normalmente é indicado em amarelo na UI da web.
+        - **Unsuccessful:** Execute as etapas somente se a execução do pipeline ou estágio atual não tiver um status de "sucesso". Isso normalmente é indicado na UI da web, dependendo do status mencionado anteriormente (para estágios, isso pode ser acionado se a construção em si for instável).
+        - **Cleanup:** Execute as etapas nesta condição depois que todas as outras condições tiverem sido avaliadas, independentemente do status do pipeline ou do estágio.
+    - Testando "post" **always** (sempre) em nossa pipeline
+    - 
