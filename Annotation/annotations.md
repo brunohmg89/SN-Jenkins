@@ -124,4 +124,10 @@
         - **Unsuccessful:** Execute as etapas somente se a execução do pipeline ou estágio atual não tiver um status de "sucesso". Isso normalmente é indicado na UI da web, dependendo do status mencionado anteriormente (para estágios, isso pode ser acionado se a construção em si for instável).
         - **Cleanup:** Execute as etapas nesta condição depois que todas as outras condições tiverem sido avaliadas, independentemente do status do pipeline ou do estágio.
     - Testando "post" **always** (sempre) em nossa pipeline
+
+7. Plugins para acompanhamento de testes
+    - Instalando o plugin `Test Results Analyzer` para melhor acompanhamento dos testes.
+
+8. Criando estágio de Delivery
+    - Adicionado o stage de **Delivery**, utilizando todos os conceitos aprendidos até agora.
     - 
