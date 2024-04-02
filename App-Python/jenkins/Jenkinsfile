@@ -9,5 +9,13 @@ pipeline {
                 sh 'python -m py_compile App-Python/sources/add2vals.py App-Python/sources/calc.py'
             }
         }
+        stage ('Teste') {
+            agent {
+                docker { image 'qnib/pytest' }
+            }
+            steps {
+                sh 'py.test --verbose --junit-xml test-reports/results.xml App-Python/sources/test_calc.py'
+            }
+        }
     }
 }
