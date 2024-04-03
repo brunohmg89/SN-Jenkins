@@ -12,7 +12,7 @@ pipeline {
                 // sh 'ls -l'
                 // sh 'cd App-Nodejs/'
                 // sh 'ls -l'
-                sh 'npm install --prefix ./App-Nodejs/ '
+                sh 'npm install --prefix App-Nodejs/ ./ '
             }
         }
     }
