@@ -30,6 +30,7 @@ pipeline {
             }
             steps {
                 sh 'pip install pyinstaller'
+                sh 'ls -la'
                 sh 'pyinstaller --onefile App-Python/sources/add2vals.py'
             }
             post {
