@@ -27,7 +27,7 @@ pipeline {
                 docker { 
                     image 'python:alpine3.19'
                     // args "--entrypoint=''"
-                    // args '-u root:root'
+                    args '-u root:root'
                 }
             }
             steps {
