@@ -25,12 +25,13 @@ pipeline {
         stage ('Delivery') {
             agent {
                 docker { 
-                    image 'python'
+                    image 'cdrx/pyinstaller-linux:python2'
+                    args '-u root --privileged'
+                    // args '-u root:root'
                 }
             }
             steps {
-                sh 'pip install pyinstaller'
-                sh 'chmod 755 App-Python/sources/add2vals.py'
+                // sh 'pip install pyinstaller'
                 sh 'pyinstaller --onefile App-Python/sources/add2vals.py'
             }
             post {
