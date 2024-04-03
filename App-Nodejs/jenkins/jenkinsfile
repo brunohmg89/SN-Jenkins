@@ -8,11 +8,11 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                sh 'pwd'
-                sh 'ls -l'
-                sh 'cd App-Nodejs/'
-                sh 'ls -l'
-                // sh 'npm install'
+                // sh 'pwd'
+                // sh 'ls -l'
+                // sh 'cd App-Nodejs/'
+                // sh 'ls -l'
+                sh 'npm install --prefix ./App-Nodejs/ '
             }
         }
     }
