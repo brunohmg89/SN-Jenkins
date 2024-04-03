@@ -3,12 +3,12 @@ pipeline {
         docker {
             image 'node:lts-alpine3.19'
             args '-p 3000:3000'
-            args '-w /var/lib/jenkins/workspace/Nodejs/App-Nodejs'
         }
     }
     stages {
         stage ('Build') {
             steps {
+                sh 'cd App-Nodejs'
                 sh 'npm install'
             }
         }
