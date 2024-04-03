@@ -11,7 +11,7 @@ pipeline {
                 // sh 'chown -R 105:111 App-Nodejs'
                 // sh 'ls -lh App-Nodejs'
                 dir ('App-Nodejs') {     
-                    sh 'ls -lh'
+                    sh 'ls -lha'
                     // sh 'npm install'
                 }
                 // sh 'ls -l App-Nodejs'
