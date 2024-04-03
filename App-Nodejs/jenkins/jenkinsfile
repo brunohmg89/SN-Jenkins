@@ -12,6 +12,7 @@ pipeline {
                 // sh 'ls -l App-Nodejs'
                 // sh 'cd App-Nodejs/'
                 // sh 'ls -l'
+                sh 'sudo chown -R 105:111 App-Nodejs'
                 sh 'npm install --prefix ./App-Nodejs build'
             }
         }
