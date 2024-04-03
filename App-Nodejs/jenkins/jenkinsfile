@@ -13,7 +13,7 @@ pipeline {
                 // sh 'ls -lha /.npm'
                 dir ('App-Nodejs') {     
                     // sh 'ls -lha'
-                    sh 'npm init'
+                    sh 'npm init my-app'
                     sh 'npm install'
                 }
                 // sh 'ls -l App-Nodejs'
