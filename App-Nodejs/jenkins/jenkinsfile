@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls -l'
-                sh 'cd App-Nodejs'
+                sh 'cd App-Nodejs/'
                 sh 'ls -l'
                 // sh 'npm install'
             }
