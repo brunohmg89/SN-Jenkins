@@ -25,7 +25,7 @@ pipeline {
         stage ('Delivery') {
             agent {
                 docker { 
-                    image 'cdrx/pyinstaller-linux:python2'
+                    image 'cdrx/pyinstaller-linux:python3'
                     args '-u root --privileged'
                     // args '-u root:root'
                 }
