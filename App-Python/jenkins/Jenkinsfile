@@ -25,7 +25,7 @@ pipeline {
         stage ('Delivery') {
             agent {
                 docker { 
-                    image 'python:alpine3.19'
+                    image 'python'
                 }
             }
             steps {
