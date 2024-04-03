@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:lts-alpine3.19'
+            image 'node'
             args '-p 3000:3000'
         }
     }
@@ -9,12 +9,13 @@ pipeline {
         stage ('Build') {
             steps {
                 dir ('App-Nodejs') {
+                    sh 'chown -R 105:111 App-Nodejs'
                     sh 'npm install'
                 }
                 // sh 'ls -l App-Nodejs'
                 // sh 'cd App-Nodejs/'
                 // sh 'ls -l'
-                // sh 'chown -R 105:111 App-Nodejs/*'
+                // sh 'chown -R 105:111 App-Nodejs'
                 // sh 'npm install --prefix ./App-Nodejs build'
             }
         }
