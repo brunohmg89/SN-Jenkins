@@ -14,7 +14,7 @@ pipeline {
                 dir ('App-Nodejs') {
                     
                     sh 'npm install'
-                // }
+                }
                 // sh 'ls -l App-Nodejs'
                 // sh 'cd App-Nodejs/'
                 // sh 'ls -l'
