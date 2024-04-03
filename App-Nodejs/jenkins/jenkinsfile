@@ -8,11 +8,11 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                // sh 'ls -lh App-Nodejs'
                 // sh 'chown -R 105:111 App-Nodejs'
                 // sh 'ls -lh App-Nodejs'
                 dir ('App-Nodejs') {     
-                    sh 'npm install'
+                    sh 'ls -lh'
+                    // sh 'npm install'
                 }
                 // sh 'ls -l App-Nodejs'
                 // sh 'cd App-Nodejs/'
