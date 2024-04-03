@@ -29,7 +29,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'pip install pyinstaller --user'
+                sh 'pip install --user -r pyinstaller'
                 sh 'pyinstaller --onefile App-Python/sources/add2vals.py'
             }
             post {
