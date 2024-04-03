@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node'
+            image 'node:6-alpine'
             args '-p 3000:3000'
         }
     }
@@ -11,8 +11,7 @@ pipeline {
                 // sh 'ls -lh App-Nodejs'
                 // sh 'chown -R 105:111 App-Nodejs'
                 // sh 'ls -lh App-Nodejs'
-                dir ('App-Nodejs') {
-                    
+                dir ('App-Nodejs') {     
                     sh 'npm install'
                 }
                 // sh 'ls -l App-Nodejs'
