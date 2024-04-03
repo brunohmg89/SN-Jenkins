@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                dir ('App-Nodejs')
+                dir ("App-Nodejs")
                 // sh 'ls -l App-Nodejs'
                 // sh 'cd App-Nodejs/'
                 // sh 'ls -l'
