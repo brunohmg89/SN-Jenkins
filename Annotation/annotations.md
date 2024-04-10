@@ -130,4 +130,10 @@
 
 8. Criando estágio de Delivery
     - Adicionado o stage de **Delivery**, utilizando todos os conceitos aprendidos até agora.
+    - Ocorreu alguns problemas no momento do **Deliver** realizei alguns testes porém não consegui realizar a entrega do app utilizando o `pyinstaller`.
+
+9. Criando estágio de Build para aplicação Node.js
+    - Realizando a cópia de alguns arquivos do repositório de teste do jenkins <https://github.com/jenkins-docs/simple-node-js-react-npm-app>
+    - Criando diretório para o App em NodeJs
+    - Iniciando a criação da pipeline com jenkinsfile
     - 
