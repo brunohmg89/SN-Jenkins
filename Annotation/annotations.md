@@ -136,4 +136,4 @@
     - Realizando a cópia de alguns arquivos do repositório de teste do jenkins <https://github.com/jenkins-docs/simple-node-js-react-npm-app>
     - Criando diretório para o App em NodeJs
     - Iniciando a criação da pipeline com jenkinsfile
-    - 
+    - Teste
