@@ -25,14 +25,12 @@ pipeline {
         stage ('Delivery') {
             agent {
                 docker { 
-                    image 'python:alpine3.19'
-                    // args "--entrypoint=''"
-                    args '-u root:root'
+                    image 'six8/pyinstaller-alpine'
+                    args '--entrypoint='
                 }
             }
             steps {
-                sh 'pip install pyinstaller'
-                sh 'pyinstaller --onefile App-Python/sources/add2vals.py'
+                sh 'pyinstaller --noconfirm --clean --onefile sources/add2vals.py'
             }
             post {
                 success {
