@@ -1,26 +1,17 @@
 pipeline {
     agent {
         docker {
-            image 'node'
-            args '-p 3000:3000'
+            image 'node:alpine3.19'
+            args '-u root:root -p 3000:3000'
         }
+    }
+    environment {
+        CI = true
     }
     stages {
         stage ('Build') {
             steps {
-                // sh 'chown -R 105:111 App-Nodejs'
-                // sh 'ls -lh App-Nodejs'
-                // sh 'ls -lha /.npm'
-                dir ('App-Nodejs') {     
-                    // sh 'ls -lha'
-                    sh 'npm init my-app'
-                    sh 'npm install'
-                }
-                // sh 'ls -l App-Nodejs'
-                // sh 'cd App-Nodejs/'
-                // sh 'ls -l'
-                // sh 'chown -R 105:111 App-Nodejs'
-                // sh 'npm install --prefix ./App-Nodejs build'
+                sh 'npm install'
             }
         }
     }

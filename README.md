@@ -18,4 +18,4 @@ Curso sobre Jenkins, avançando com a ferramenta.
 
 ## Status do curso
 
-Em andamento...
+Concluído
