@@ -130,10 +130,20 @@
 
 8. Criando estágio de Delivery
     - Adicionado o stage de **Delivery**, utilizando todos os conceitos aprendidos até agora.
-    - Ocorreu alguns problemas no momento do **Deliver** realizei alguns testes porém não consegui realizar a entrega do app utilizando o `pyinstaller`.
+    - Ocorreu alguns problemas no momento do **Deliver** realizei alguns testes porém não consegui realizar a entrega do app utilizando o `pyinstaller` realizei a troca da imagem pela <https://hub.docker.com/r/six8/pyinstaller-alpine>, nessa imagem foi realizada a criação do app na pipeline do Jenkins.
+    - Testado na mesma pipeline do projeto anterior e funcionou corretamente.
 
 9. Criando estágio de Build para aplicação Node.js
-    - Realizando a cópia de alguns arquivos do repositório de teste do jenkins <https://github.com/jenkins-docs/simple-node-js-react-npm-app>
-    - Criando diretório para o App em NodeJs
-    - Iniciando a criação da pipeline com jenkinsfile
-    - Teste
+    - Realizado um fork do repositório <https://github.com/jenkins-docs/simple-node-js-react-npm-app> para criação da pipeline no Jenkins
+    - Iniciando a criação da pipeline com jenkinsfile, criado stage de **Build**
+    - Concluído criação do stage de build.
+
+10. Criando estágio de teste para aplicação Node.js
+    - Inserido **step** de test na pipeline do Jenkins.
+    - Explicado como executar um script ao invés de executar um comando direto no corpo do jenkinsfile
+    - Concluído criação do stage de teste.
+
+11. Criando estágio de entrega para a aplicação Node.js
+    - Inserido **step** de **Deliver** na pipeline do Jenkins.
+    - Explicando os steps e ensinando a utilzar scripts.
+    - Concluído criação do stage de entrega.
